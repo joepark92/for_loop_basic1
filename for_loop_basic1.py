@@ -8,11 +8,12 @@ for x in range(5,1001,5):
 
 # Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, print "Coding" instead. If divisible by 10, print "Coding Dojo".
 for x in range(1, 101):
-    if x % 5 == 0:
-        print("Coding")
     if x % 10 == 0:
         print("Coding Dojo")
-    else: print(x)
+    elif x % 5 == 0:
+        print("Coding")
+    else:
+        print(x)
 
 # Whoa. That Sucker's Huge - Add odd integers from 0 to 500,000, and print the final sum.
 sum = 0
